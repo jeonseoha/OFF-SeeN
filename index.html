@@ -8,7 +8,8 @@
   <title>OFF SeeN — NEXT FACE?</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+KR:wght@400;500;600;700&family=Roboto+Condensed:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/hada0127/hada-type-hada-condensed@v2026.10.21/css/hada-condensed.css">
   <link rel="stylesheet" href="css.css">
 </head>
 <body>
@@ -22,6 +23,23 @@
 
   <main id="home">
     <section class="hero" aria-labelledby="hero-title">
+      <svg class="hero-motion" viewBox="0 0 1200 800" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+        <defs>
+          <path id="star-route-one" pathLength="1000" d="M70 680 C145 390 235 115 465 155 C675 192 755 490 990 540 C1130 570 1165 350 1080 190 C940 -20 655 110 480 350 C325 565 190 785 70 680" />
+          <path id="star-route-two" pathLength="1000" d="M1120 690 C980 520 950 250 770 185 C600 125 410 280 290 430 C150 610 205 785 430 730 C670 672 775 405 960 270 C1085 178 1170 345 1120 690" />
+          <path id="star-route-three" pathLength="1000" d="M145 115 C320 20 495 115 620 290 C765 492 885 760 1050 680 C1190 612 1060 340 900 170 C710 -30 460 22 300 250 C150 465 60 605 145 115" />
+          <path id="star-shape" d="M0-12 3.2-3.2 12 0 3.2 3.2 0 12-3.2 3.2-12 0-3.2-3.2Z" />
+        </defs>
+        <use href="#star-route-one" class="motion-tail motion-tail-glow" pathLength="1000" stroke-dasharray="140 860"><animate attributeName="stroke-dashoffset" from="140" to="-860" dur="13s" repeatCount="indefinite"/></use>
+        <use href="#star-route-one" class="motion-tail motion-tail-core" pathLength="1000" stroke-dasharray="140 860"><animate attributeName="stroke-dashoffset" from="140" to="-860" dur="13s" repeatCount="indefinite"/></use>
+        <use href="#star-route-two" class="motion-tail motion-tail-glow" pathLength="1000" stroke-dasharray="140 860"><animate attributeName="stroke-dashoffset" from="140" to="-860" dur="15s" begin="-5s" repeatCount="indefinite"/></use>
+        <use href="#star-route-two" class="motion-tail motion-tail-core" pathLength="1000" stroke-dasharray="140 860"><animate attributeName="stroke-dashoffset" from="140" to="-860" dur="15s" begin="-5s" repeatCount="indefinite"/></use>
+        <use href="#star-route-three" class="motion-tail motion-tail-glow" pathLength="1000" stroke-dasharray="140 860"><animate attributeName="stroke-dashoffset" from="140" to="-860" dur="17s" begin="-9s" repeatCount="indefinite"/></use>
+        <use href="#star-route-three" class="motion-tail motion-tail-core" pathLength="1000" stroke-dasharray="140 860"><animate attributeName="stroke-dashoffset" from="140" to="-860" dur="17s" begin="-9s" repeatCount="indefinite"/></use>
+        <g class="motion-star"><use href="#star-shape"/><animateMotion dur="13s" repeatCount="indefinite"><mpath href="#star-route-one"/></animateMotion></g>
+        <g class="motion-star motion-star--two"><use href="#star-shape"/><animateMotion dur="15s" begin="-5s" repeatCount="indefinite"><mpath href="#star-route-two"/></animateMotion></g>
+        <g class="motion-star motion-star--three"><use href="#star-shape"/><animateMotion dur="17s" begin="-9s" repeatCount="indefinite"><mpath href="#star-route-three"/></animateMotion></g>
+      </svg>
       <div class="hero-copy">
         <p class="eyebrow"><span class="live-dot"></span> INDEPENDENT PEOPLE &amp; CULTURE PLATFORM</p>
         <h1 id="hero-title">NEXT<br><span class="face-word">FACE<span class="question">?</span></span></h1>
@@ -30,54 +48,46 @@
           <p class="hero-note">아직 발견되지 않은 사람들의<br>가능성을 봅니다.</p>
         </div>
       </div>
-      <div class="hero-image-wrap">
-        <div class="hero-art" aria-hidden="true"></div>
-        <div class="image-index"><span>01 / 03</span><span>SEOUL, KR</span></div>
-        <span class="image-caption">A FACE YET TO BE FOUND</span>
-        <span class="image-mark" aria-hidden="true">O.</span>
-      </div>
       <a class="scroll-cue" href="#about"><span></span> SCROLL TO DISCOVER</a>
-      <p class="hero-side-label">FIND THE UNSEEN — 2025</p>
+      <p class="hero-side-label">FIND THE UNSEEN — 2026</p>
     </section>
 
     <section class="about section-pad" id="about">
       <div class="section-label"><span>01</span> / ABOUT OFF SeeN</div>
       <div class="about-content">
-        <h2>보이지 않던 가능성을<br>세상과 <span>연결합니다.</span></h2>
+        <h2>보이지 않던 가능성,<br>세상과 <span>연결합니다.</span></h2>
         <div class="about-text">
-          <p>OFF SeeN은 아직 주목받지 못한 사람과 새로운 브랜드를 발견하고, 그들의 다음 장면을 함께 만드는 독립 플랫폼입니다.</p>
-          <p>우리는 한 사람의 고유한 분위기와 가능성을 기록합니다. 그리고 서로의 세계가 만나는 순간, 새로운 기회가 시작된다고 믿습니다.</p>
+          <p>OFF SeeN은 아직 주목받지 못한 사람들을 발견하고, 그들을 주목함으로써 그들의 다음 장면을 함께 만드는 독립 플랫폼입니다.</p>
+          <p>우리는 각 사람의 고유한 매력과 가능성을 기록합니다.</p>
           <span class="signature">JEON SEOHA <span>— FOUNDER, OFF SeeN</span></span>
         </div>
-      </div>
-    </section>
+      </div></section>
 
     <section class="activities section-pad" id="activities">
       <div class="activity-heading"><div class="section-label"><span>02</span> / WHAT WE DO</div><p>THREE WAYS TO<br>MAKE A NEW SCENE.</p></div>
       <article class="activity-card people-card">
-        <div class="card-image"><div class="card-art card-art--one" aria-hidden="true"></div><span class="card-number">01</span></div>
+        <div class="card-image"><div class="card-art card-art--one" aria-hidden="true"><svg viewBox="0 0 400 460" role="presentation"><circle class="person person-main" cx="200" cy="125" r="62"/><path class="person person-main" d="M111 421v-106c0-62 35-105 89-105s89 43 89 105v106z"/></svg></div><span class="card-number">01</span></div>
         <div class="card-info"><div><h3>PEOPLE</h3><p>아직 발견되지 않은 얼굴과 이야기를 기록합니다.</p></div><span class="card-arrow">↗</span></div>
         <span class="card-tag"># PEOPLE ARCHIVE</span>
       </article>
       <article class="activity-card discover-card">
-        <div class="card-image"><div class="card-art card-art--two" aria-hidden="true"></div><span class="card-number">02</span></div>
+        <div class="card-image"><div class="card-art card-art--two" aria-hidden="true"><svg viewBox="0 0 400 460" role="presentation"><circle class="search-ring" cx="178" cy="197" r="91"/><path class="search-handle" d="M242 262 326 346 310 362 226 278"/></svg></div><span class="card-number">02</span></div>
         <div class="card-info"><div><h3>DISCOVER</h3><p>이미지와 키워드로 취향의 다음 장면을 찾습니다.</p></div><span class="card-arrow">↗</span></div>
         <span class="card-tag"># VISUAL SEARCH</span>
       </article>
       <article class="activity-card opportunity-card">
-        <div class="card-image"><div class="card-art card-art--three" aria-hidden="true"></div><span class="card-number">03</span></div>
+        <div class="card-image"><div class="card-art card-art--three" aria-hidden="true"><svg viewBox="0 0 400 460" role="presentation"><path class="sparkle-link" d="M105 319 200 135l95 184z"/><path class="sparkle" d="m105 289 9 21 21 9-21 9-9 21-9-21-21-9 21-9z"/><path class="sparkle sparkle-large" d="m200 91 13 31 31 13-31 13-13 31-13-31-31-13 31-13z"/><path class="sparkle" d="m295 289 9 21 21 9-21 9-9 21-9-21-21-9 21-9z"/></svg></div><span class="card-number">03</span></div>
         <div class="card-info"><div><h3>OPPORTUNITY</h3><p>사람과 브랜드가 함께할 기회를 연결합니다.</p></div><span class="card-arrow">↗</span></div>
         <span class="card-tag"># OPEN TO COLLAB</span>
-      </article>
-    </section>
+      </article></section>
 
     <section class="manifesto"><span class="manifesto-top">THE NEXT SCENE STARTS WITH YOU.</span><p>BE SEEN.<br><span>MAKE A SCENE.</span></p><span class="manifesto-star">✳</span></section>
 
     <section class="contact section-pad" id="contact">
       <div class="section-label"><span>03</span> / CONTACT</div>
-      <div class="contact-content"><div><p class="eyebrow">HAVE A FACE IN MIND?</p><h2>LET'S MAKE<br><span>IT HAPPEN.</span></h2></div><div class="contact-details"><p>새로운 인물, 브랜드, 협업의 가능성.<br>함께 만들고 싶은 장면이 있다면 연락 주세요.</p><a class="email-link" href="mailto:hello@offseen.kr">hello@offseen.kr <span>↗</span></a><span class="contact-caption">OPEN FOR COLLABORATION · SEOUL, KR</span></div></div>
+      <div class="contact-content"><div><p class="eyebrow">HAVE A FACE IN MIND?</p><h2>LET'S MAKE<br><span>IT HAPPEN.</span></h2></div><div class="contact-details"><a class="email-link" href="mailto:jeonseoha03@gmail.com">jeonseoha03@gmail.com <span>↗</span></a></div></div>
     </section>
   </main>
-  <footer class="site-footer"><a class="wordmark" href="#home">OFF <span>SeeN</span><i>®</i></a><span>© 2025 OFF SeeN. ALL RIGHTS RESERVED.</span><a href="#home">BACK TO TOP ↑</a></footer>
+  <footer class="site-footer"><a class="wordmark" href="#home">OFF <span>SeeN</span><i>®</i></a><span>© 2026 OFF SeeN. ALL RIGHTS RESERVED.</span><a href="#home">BACK TO TOP ↑</a></footer>
 </body>
 </html>
