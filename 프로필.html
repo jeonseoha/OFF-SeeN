@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111111">
+  <meta name="description" content="OFF SeeN — 아직 발견되지 않은 인물 아카이브">
+  <title>OFF SeeN — DISCOVER</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+KR:wght@400;500;600;700&family=Roboto+Condensed:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/hada0127/hada-type-hada-condensed@v2026.10.21/css/hada-condensed.css">
+  <link rel="stylesheet" href="css.css">
+  <link rel="stylesheet" href="프로필.css">
+</head>
+<body class="profile-page">
+  <header class="site-header">
+    <a class="wordmark" href="index.html" aria-label="OFF SeeN 홈">OFF <span>SeeN</span><i>®</i></a>
+    <nav aria-label="주요 메뉴"><a href="index.html#activities">ARCHIVE</a><a href="index.html#about">ABOUT</a></nav>
+    <a class="header-cta" href="index.html">BACK TO HOME <span>↗</span></a>
+  </header>
+
+  <main>
+    <section id="archive-view" class="archive-view" aria-labelledby="archive-title">
+      <div class="archive-topline"><div class="profile-breadcrumb"><a href="index.html">HOME</a><span>/</span><span>DISCOVER</span></div><span class="archive-counter">PEOPLE ARCHIVE / 001—006</span></div>
+      <div class="archive-heading"><p class="eyebrow"><span class="live-dot"></span> OFF SeeN / PERSONAL ARCHIVE</p><h1 id="archive-title">FIND THE<br><span>UNSEEN.</span></h1><p class="archive-note">아직 발견되지 않은 얼굴들.<br>사진을 선택해 프로필을 확인하세요.</p></div>
+      <div class="archive-grid" aria-label="인물 프로필 목록">
+        <button class="archive-card" type="button" data-person="0" aria-label="프로필 1 상세 보기"><span class="archive-photo" aria-hidden="true"><i></i></span><span class="archive-id">OFF_— — — —</span></button>
+        <button class="archive-card" type="button" data-person="1" aria-label="프로필 2 상세 보기"><span class="archive-photo" aria-hidden="true"><i></i></span><span class="archive-id">OFF_— — — —</span></button>
+        <button class="archive-card" type="button" data-person="2" aria-label="프로필 3 상세 보기"><span class="archive-photo" aria-hidden="true"><i></i></span><span class="archive-id">OFF_— — — —</span></button>
+        <button class="archive-card" type="button" data-person="3" aria-label="프로필 4 상세 보기"><span class="archive-photo" aria-hidden="true"><i></i></span><span class="archive-id">OFF_— — — —</span></button>
+        <button class="archive-card" type="button" data-person="4" aria-label="프로필 5 상세 보기"><span class="archive-photo" aria-hidden="true"><i></i></span><span class="archive-id">OFF_— — — —</span></button>
+        <button class="archive-card" type="button" data-person="5" aria-label="프로필 6 상세 보기"><span class="archive-photo" aria-hidden="true"><i></i></span><span class="archive-id">OFF_— — — —</span></button>
+      </div>
+      <p class="archive-footnote"><span>※</span> 실제 회원의 사진과 고유번호가 등록되면 이 목록에 표시됩니다.</p>
+    </section>
+
+    <section id="person-view" class="person-view" aria-labelledby="person-name" hidden>
+      <div class="person-toolbar"><button class="back-to-archive" type="button">← BACK TO DISCOVER</button><span>DISCOVER <b>/</b> PROFILE</span><span class="person-current-id">OFF_— — — —</span></div>
+      <div class="person-layout">
+        <div class="person-photo" role="img" aria-label="회원이 업로드한 프로필 사진이 표시될 영역"><span>MEMBER<br>PHOTO</span><i></i><small>MEMBER UPLOAD ONLY / 3:4</small></div>
+        <div class="person-details">
+          <p class="eyebrow"><span class="live-dot"></span> PERSONAL ARCHIVE</p>
+          <p class="person-number">OFF NUMBER <strong>— — — —</strong></p>
+          <h1 id="person-name" tabindex="-1">MEMBER<br><span>NAME</span></h1>
+          <p class="person-category">CATEGORY <strong>—</strong></p>
+          <div class="person-facts"><div><span>BIRTH YEAR</span><strong>—</strong></div><div><span>GENDER</span><strong>—</strong></div><div><span>HEIGHT</span><strong>—</strong></div></div>
+          <div class="person-keywords"><span>KEYWORDS</span><p>등록된 키워드가 표시됩니다.</p></div>
+        </div>
+      </div>
+      <div class="person-more">
+        <section><div class="section-label"><span>01</span> / ABOUT ME</div><p>회원이 작성한 자기소개가 원문의 문단과 줄바꿈을 유지해 표시됩니다.</p></section>
+        <section><div class="section-label"><span>02</span> / SNS &amp; PORTFOLIO</div><p>회원이 공개 등록한 SNS 및 포트폴리오 링크가 표시됩니다.</p></section>
+      </div>
+      <div class="person-collaboration"><p>DISCOVER POTENTIAL.<br>CONNECT POSSIBILITIES.</p><h2>LET'S CREATE<br>SOMETHING <span>NEW.</span></h2><button type="button" disabled>PROPOSE A COLLABORATION <span>↗</span></button><small>협업 제안은 기업 회원 인증 기능 연결 후 이용할 수 있습니다.</small></div>
+      <p class="person-preview-note">정적 포트폴리오 시안 · 실제 회원 데이터 및 접근 권한 기능 미연결</p>
+    </section>
+  </main>
+  <footer class="site-footer"><a class="wordmark" href="index.html">OFF <span>SeeN</span><i>®</i></a><span>© 2026 OFF SeeN. ALL RIGHTS RESERVED.</span><a href="#">BACK TO TOP ↑</a></footer>
+  <script src="프로필.js" defer></script>
+</body>
+</html>

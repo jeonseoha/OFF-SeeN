@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111111">
+  <meta name="description" content="OFF SeeN — 아직 발견되지 않은 인물 아카이브를 탐색하세요.">
+  <title>OFF SeeN — DISCOVER</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+KR:wght@400;500;600;700&family=Roboto+Condensed:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/hada0127/hada-type-hada-condensed@v2026.10.21/css/hada-condensed.css">
+  <link rel="stylesheet" href="css.css">
+  <link rel="stylesheet" href="디스커버.css">
+</head>
+<body class="discover-page">
+  <header class="site-header">
+    <a class="wordmark" href="index.html" aria-label="OFF SeeN 홈">OFF <span>SeeN</span><i>®</i></a>
+    <nav aria-label="주요 메뉴"><a href="index.html#about">ABOUT</a><a href="index.html#activities">WHAT WE DO</a><a href="index.html#contact">CONTACT</a></nav>
+    <a class="header-cta" href="index.html">BACK TO HOME <span>↗</span></a>
+  </header>
+
+  <main>
+    <section class="discover-hero" aria-labelledby="discover-title">
+      <div class="discover-crumb"><a href="index.html">HOME</a><span>/</span><span>DISCOVER</span><span class="discover-edition">DIGITAL TALENT ARCHIVE / 001</span></div>
+      <div class="discover-hero-copy">
+        <p class="eyebrow"><span class="live-dot"></span> OFF SeeN / PEOPLE ARCHIVE</p>
+        <h1 id="discover-title">DISCOVER<br><span>THE UNSEEN.</span></h1>
+        <div class="discover-subline"><p>Find the next face.<br>Discover the unseen potential.</p><p>새로운 가능성을 가진 인물들을 발견하고,<br>다양한 분야의 새로운 연결을 시작하세요.</p></div>
+      </div>
+      <span class="discover-vertical">PEOPLE · CULTURE · POSSIBILITY</span>
+    </section>
+
+    <section class="discover-content" aria-label="인물 아카이브">
+      <form class="discover-search" id="discover-search-form" role="search">
+        <label class="visually-hidden" for="discover-query">이름, OFF 번호, 키워드 또는 활동 분야 검색</label>
+        <span class="search-index">SEARCH / 01</span>
+        <input id="discover-query" type="search" placeholder="SEARCH NAME, OFF NUMBER, KEYWORD..." autocomplete="off">
+        <button class="search-submit" type="submit">SEARCH <span>↗</span></button>
+        <button class="search-clear" type="button" aria-label="검색어 지우기" hidden>×</button>
+      </form>
+
+      <div class="archive-controls">
+        <div class="category-filters" role="group" aria-label="활동 분야 필터">
+          <button type="button" class="category-filter is-active" data-category="all" aria-pressed="true">ALL</button>
+          <button type="button" class="category-filter" data-category="model" aria-pressed="false">MODEL</button>
+          <button type="button" class="category-filter" data-category="actor" aria-pressed="false">ACTOR</button>
+          <button type="button" class="category-filter" data-category="creator" aria-pressed="false">CREATOR</button>
+          <button type="button" class="category-filter" data-category="influencer" aria-pressed="false">INFLUENCER</button>
+          <button type="button" class="category-filter" data-category="other" aria-pressed="false">OTHER</button>
+        </div>
+        <label class="sort-control"><span>SORT BY</span><select id="discover-sort" aria-label="프로필 정렬"><option value="newest">NEWEST</option><option value="name-asc">NAME A-Z</option><option value="name-desc">NAME Z-A</option></select></label>
+      </div>
+
+      <div class="results-meta"><span id="result-count">00 PROFILES</span><span>APPROVED PEOPLE / OFF SeeN</span></div>
+      <div class="profile-grid" id="profile-grid" aria-live="polite" aria-busy="false"></div>
+      <div class="empty-state" id="empty-state">
+        <span class="empty-code">ARCHIVE / 000</span>
+        <h2>NO RESULTS<br><span>FOUND.</span></h2>
+        <p>아직 공개된 프로필이 없습니다.<br>다른 검색어나 필터를 사용해 보세요.</p>
+      </div>
+    </section>
+    <section class="discover-note"><span>OFF SeeN / ARCHIVE NOTE</span><p>프로필 카드에는 사진, OFF 고유번호, 이름만 표시됩니다. 상세 프로필과 협업 기능은 실제 서비스 데이터 및 회원 인증 연결 후 제공됩니다.</p></section>
+  </main>
+
+  <footer class="site-footer"><a class="wordmark" href="index.html">OFF <span>SeeN</span><i>®</i></a><span>© 2026 OFF SeeN. ALL RIGHTS RESERVED.</span><a href="#">BACK TO TOP ↑</a></footer>
+  <script src="디스커버.js" defer></script>
+</body>
+</html>
